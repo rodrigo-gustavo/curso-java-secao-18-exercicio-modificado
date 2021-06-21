@@ -65,7 +65,8 @@ public class Program {
 				cs4.processContract(contract, N);
 				break;
 			}
-		} catch (InputMismatchException e) {
+		} 
+		catch (InputMismatchException e) {
 			System.out.println("Error: " + e.getMessage());
 		}
 
@@ -74,7 +75,6 @@ public class Program {
 		for (Installment i : contract.getInstallments()) {
 			System.out.println(i);
 		}
-
 		sc.close();
 	}
 }

@@ -29,7 +29,7 @@ public class ContractService {
 
 			double fullPayment = updatedPayment + onlinePaymentService.paymentFee(updatedPayment);
 
-			Date date = addMonth(contract.getDate(), months);
+			Date date = addMonth(contract.getDate(), i);
 			contract.getInstallments().add(new Installment(date, fullPayment));
 		}
 	}

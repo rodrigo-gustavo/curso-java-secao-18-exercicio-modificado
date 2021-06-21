@@ -37,7 +37,5 @@ public class Installment {
 	@Override
 	public String toString() {
 		return sdf.format(dueDate) + " - " + String.format("%.2f", amount);
-	}
-	
-	
+	}	
 }
